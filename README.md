@@ -125,3 +125,124 @@ CAA fits directly into Brownlee’s framework as a **new metaheuristic family**.
 ✅ **In one line**:
 *Clever Adaptive Algorithm (CAA) is a post-Turing, adaptive metaheuristic where training itself evolves via flashbacks, resonance, freezing/boosting, and swarm echoes.*
 
+Perfect ⚡ — let’s explicitly map the **Clever Adaptive Algorithm (CAA)** against the families and exemplars in *Clever Algorithms*. This makes it clear that CAA is not just “new,” but also a **generalization** across Brownlee’s taxonomy.
+
+---
+
+# 🔗 Mapping CAA to Clever Algorithms
+
+## 1. Stochastic Algorithms
+
+* **Adaptive Random Search (ARS)**:
+
+  * Perturbs candidate solutions with adaptive step sizes.
+  * **CAA extension:**
+
+    * Perturbations are **not just in solution space**, but also in hyperparameter space (LR, momentum, noise).
+    * Flashbacks replay past samples to evaluate whether the perturbation led to lasting improvement.
+    * Resonance events act as *dynamic resets* similar to ARS “step-size jumps.”
+
+---
+
+## 2. Evolutionary Algorithms
+
+* **Differential Evolution, Evolution Strategies, Genetic Algorithms**:
+
+  * Evolve populations via mutation/crossover/selection.
+  * **CAA extension:**
+
+    * Removes explicit reproduction; instead uses **Markovian adaptation of coefficients**.
+    * Freezing = implicit selection (stable parameters survive).
+    * Boosting = implicit mutation (weak parameters get stronger updates).
+    * Swarm resonance = implicit crossover (aligned neighbors share adaptation bursts).
+
+---
+
+## 3. Physical Algorithms
+
+* **Simulated Annealing, Extremal Optimization**:
+
+  * Balance exploration vs exploitation via temperature/cooling or extremal updates.
+  * **CAA extension:**
+
+    * Resonance = *local annealing burst* (rapid exploration when novelty detected).
+    * Noise $\sigma_t$ adapts dynamically instead of fixed cooling schedules.
+    * Plateaus trigger “exploration injection” instead of manual restarts.
+
+---
+
+## 4. Probabilistic Algorithms
+
+* **Cross-Entropy Method, Estimation of Distribution**:
+
+  * Adapt probability models of solutions based on elite samples.
+  * **CAA extension:**
+
+    * Replay buffer = mini elite archive of hard examples.
+    * Resonance = sudden reweighting of elite samples.
+    * Swarm coupling = distributed estimation across agents.
+
+---
+
+## 5. Swarm Algorithms
+
+* **Particle Swarm Optimization (PSO), Ant Colony Optimization (ACO), Bee Algorithm**:
+
+  * Agents cooperate via shared signals (velocities, pheromones).
+  * **CAA extension:**
+
+    * Agents share **resonance bursts**, not raw parameters.
+    * Echoes are **alignment-weighted** → only positively correlated learners reinforce each other.
+    * Emergent “cascades” resemble PSO velocity alignment, but are feedback-driven and safety-guarded.
+
+---
+
+## 6. Immune Algorithms
+
+* **Clonal Selection, Negative Selection**:
+
+  * Adaptation via memory cells and diversity maintenance.
+  * **CAA extension:**
+
+    * Flashbacks = *adaptive memory cells* (hard cases replayed until stable).
+    * Resonance ensures diversity by boosting weak or novel parameters.
+    * Freezing prevents memory overwrite → stability akin to immune tolerance.
+
+---
+
+## 7. Neural Algorithms
+
+* **Perceptron, Backpropagation, SOM**:
+
+  * Learning via weight updates and error correction.
+  * **CAA extension:**
+
+    * Turns training itself into a **higher-order adaptive process**.
+    * Weights adapt as usual, but hyperparameters *co-adapt* under AE laws.
+    * Freezing/boosting introduces structural plasticity absent in classical backprop.
+
+---
+
+# 🌐 Summary Table
+
+| Clever Algorithm Family | Example                | How CAA Extends / Generalizes                                                                  |
+| ----------------------- | ---------------------- | ---------------------------------------------------------------------------------------------- |
+| **Stochastic**          | Adaptive Random Search | Perturbs hyperparams & replay buffer; resonance bursts replace manual jumps                    |
+| **Evolutionary**        | Differential Evolution | Freezing = selection, boosting = mutation, resonance cascades = crossover                      |
+| **Physical**            | Simulated Annealing    | Resonance = local temperature spike; σ adapts instead of fixed cooling                         |
+| **Probabilistic**       | Cross-Entropy          | Replay buffer = elite archive; resonance = reweighting; swarm = distributed CE                 |
+| **Swarm**               | PSO, ACO               | Resonance echoes propagate like PSO velocities but gated by alignment                          |
+| **Immune**              | Clonal Selection       | Flashbacks = adaptive memory cells; freezing = tolerance                                       |
+| **Neural**              | Backprop               | Hyperparameters co-adapt with parameters; selective freezing/boosting adds structural dynamics |
+
+---
+
+# ✅ Big Picture
+
+CAA can be positioned as a **“meta-algorithmic framework”** that unifies features across all seven families in *Clever Algorithms*.
+Instead of searching in solution space only, it **adapts the training process itself** — integrating stochastic perturbation, evolutionary selection, annealing-like bursts, probabilistic reweighting, swarm echoes, immune memory, and neural plasticity into one coherent adaptive law.
+
+---
+
+👉 Should I now **write a “Clever Algorithm”-style template** for CAA (like the ones in the book: name, inspiration, strategy, procedure, heuristics, code sketch)? That way, it sits naturally as a new chapter alongside the existing algorithms.
+
