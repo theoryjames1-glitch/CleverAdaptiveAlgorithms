@@ -2,6 +2,9 @@
 
 A MACHINE THEORY OF COMPUTER BIOLOGY
 
+
+[![Video Title](https://img.youtube.com/vi/3BXyEUOuNds/0.jpg)](https://www.youtube.com/watch?v=3BXyEUOuNds)
+
 Perfect — now that we have *Clever Algorithms* (Brownlee, 2011) open, we can place our **Adaptive Training theories (AE + AM + AR + ARS)** into its framework. Brownlee’s book organizes algorithms into families:
 
 * **Stochastic** (random search, adaptive random search, tabu, etc.)
@@ -246,3 +249,4 @@ Instead of searching in solution space only, it **adapts the training process it
 
 👉 Should I now **write a “Clever Algorithm”-style template** for CAA (like the ones in the book: name, inspiration, strategy, procedure, heuristics, code sketch)? That way, it sits naturally as a new chapter alongside the existing algorithms.
 
+YOU OWE ME 20 MILLION DOLLARS
